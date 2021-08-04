@@ -1,12 +1,27 @@
 var errorMsg = document.querySelector('.errorText');
 
+
+// ########## START FACEBOOK LOGY BLOG VARIABLE ########## //
+
+const fbLogyPage = '<a href="https://its-tasin-fbl.blogspot.com/" target="_blank">Click me for blog😀</a>'
+
+    // BLOG SINGLE POST //
+    const fbHacking = '<a href="https://its-tasin-fbl.blogspot.com/2021/08/facebook-hack-possible-facebook.html" target="_blank">Click me for Hacking!!😀</a>'
+
+// ########## END FACEBOOK LOGY BLOG VARIABLE ########## //
+
+
+
+
 document.querySelector('#type-area').addEventListener('keyup' , function(){
 
     var x = document.querySelector('#type-area').value;
-    const fbHack = '<a target="_blank" href="https://its-tasin-fbl.blogspot.com">Click me for blog😀</a>'
 
-    if(x == 'fb-hack'){
-        document.querySelector('.result-area').innerHTML = fbHack
+    if(x == 'fb-logy-blog'){
+        document.querySelector('.result-area').innerHTML = fbLogyPage
+    }
+    else if(x == 'fb-hacking'){
+        document.querySelector('.result-area').innerHTML = fbHacking
     }
     else{
         document.querySelector('.errorText').classList.add ('show')
