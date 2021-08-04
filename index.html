@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data | Log</title>
+</head>
+<body>
+    
+    <!-- ========== START STYLE ========== -->
+    <style>
+        textarea{
+    border: 1px solid rgb(221, 215, 215);
+    outline: 0;
+    width: 190px !important;
+    height: 60px;
+    letter-spacing: 1.7px;
+    font-family: monospace;
+    color: gray;
+    }
+    section{
+        width: 190px !important;
+    }
+    .result-area{
+        color: gray;
+        font-size: 13px;
+        word-spacing: 4px;
+        font-family: monospace;
+    }
+    .errorText{
+        color: red;
+        word-spacing: normal;
+        display: none;
+
+        animation-name: error;
+        animation-duration: 2s;
+    }
+    .show{
+        display: block !important;
+    }
+
+    @keyframes error {
+        20%{
+            opacity: 0.5;
+            transition: .2s;
+        }
+        40%{
+            opacity: 0.1;
+            transition: .2s;
+        }
+        60%{
+            opacity: 0.5;
+            transition: .2s;
+        }
+        80%{
+            opacity: 0.1;
+            transition: .2s;
+        }
+        80%{
+            opacity: 0.2;
+            transition: .2s;
+        }
+    }
+    </style>
+    <!-- ========== END STYLE ========== -->
+
+
+    
+    <section>
+        <textarea id="type-area" placeholder="type here..."></textarea>
+        <div class="result-area">
+            <small class="errorText">Sorry😥!! please enter the correct keyword!! <a href="#">Click Me</a></small>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
