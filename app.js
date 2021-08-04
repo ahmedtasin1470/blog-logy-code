@@ -3,10 +3,10 @@ var errorMsg = document.querySelector('.errorText');
 
 // ########## START FACEBOOK LOGY BLOG VARIABLE ########## //
 
-const fbLogyPage = '<a href="https://its-tasin-fbl.blogspot.com/" target="_blank">Click me for blog😀</a>'
+const fbLogyPage = '<a href="https://itz-tasin.blogspot.com/" target="_blank">Click me for blog😀</a>'
 
     // BLOG SINGLE POST //
-    const fbHacking = '<a href="https://its-tasin-fbl.blogspot.com/2021/08/facebook-hack-possible-facebook.html" target="_blank">Click me for Hacking!!😀</a>'
+    const fbHacking = '<a href="https://itz-tasin.blogspot.com/2021/08/facebook-hack-possible-facebook.html" target="_blank">Click me for Hacking!!😀</a>'
 
 // ########## END FACEBOOK LOGY BLOG VARIABLE ########## //
 
