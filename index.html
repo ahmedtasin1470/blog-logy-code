@@ -11,22 +11,27 @@
     <!-- ========== START STYLE ========== -->
     <style>
         textarea{
-    border: 1px solid rgb(221, 215, 215);
+    border: 1px solid rgb(12, 12, 12);
     outline: 0;
     width: 275px !important;
     height: 81px;
     letter-spacing: 1.7px;
     font-family: monospace;
     color: gray;
+    border-radius: 4px;
+    padding-left: 4px;
     }
-    section{
-        width: 190px !important;
+    textarea#type-area:focus {
+    filter: drop-shadow(0px 2px 2px black);
     }
     .result-area{
         color: gray;
         font-size: 13px;
-        word-spacing: 4px;
+        word-spacing: 3px !important;
         font-family: monospace;
+    }
+    small{
+        width: 282px;
     }
     .errorText{
         color: red;
@@ -64,15 +69,16 @@
     }
     </style>
     <!-- ========== END STYLE ========== -->
-
-
-    
     <section>
-        <textarea id="type-area" placeholder="type here..."></textarea>
+        <textarea id="type-area" placeholder="Type your post key...."></textarea>
         <div class="result-area">
             <small class="errorText">Sorry😥!! please enter the correct keyword!! <a href="#">Click Me</a></small>
         </div>
     </section>
+
+    
+
+
     <script src="app.js"></script>
 </body>
 </html>
